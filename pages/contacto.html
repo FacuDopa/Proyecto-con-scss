@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- cdnjs -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="../css/estilos.css">
+    <title>contacto</title>
+</head>
+<body>
+    <header>
+        <logo class="logo">
+            <h2 class="jyr">Carpinteria J&R Desings</h2>
+        </logo>
+
+        <nav>
+            <ul class="nav nav-tabs col-12">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Inicio</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="servicios.html">Servicios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="galeria.html">Galeria</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="ubicacion.html">Ubicacion</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Contacto</a>
+                </li>
+    
+            </ul>
+        </nav>
+
+    </header>
+
+    <main class="main_contacto">
+        <div class="contacto" data-aos="fade-down-right" data-aos-duration="1500">
+            <h2 class="titulo_body"><i class="fa-solid fa-hammer"> Nuestro Contacto</i></h2>
+            <p class="parrafos_body">En esta seccion podes contactarnos completando el siguiente formulario, en el apartado de comentarios podes detallar el motivo del contacto, luego podes ingresar el metodo con el que nos comunicaremos con usted<br> 
+            Muchas gracias por visitar nuestra pagina</p>
+        </div>
+
+        <div class="contenedor_form">
+            <section class="formulario" data-aos="zoom-out-right" data-aos-duration="1500">
+                <form action="">
+    
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="nombre" placeholder="nombreU">
+                        <label for="Nombre" class="label_contacto"> NOMBRE Y APELLIDO: </label>
+                    </div>
+    
+                    <!-- inicio de acordeon -->
+    
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+    
+                            <!-- titulo del acordeon -->
+    
+                            <h2 class="accordion-header" id="headingOne">
+                            <button class="acordeon_titulo accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">Metodo de Contacto:</button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+    
+                                <!-- inicio de el acordeon extendido -->
+    
+                                <div class="accordion-body">
+    
+                                    <div class="form-check form-switch">
+                                        <input class="form-check-input bg-secondary border-dark" type="checkbox" role="switch" name="metodoC" id="wpp">
+                                        <label class="form-check-label label_contacto" for="wpp">Whatsapp</label>
+                                    </div>
+                                    
+                                    <br>
+                    
+                                    <div class="form-check form-switch">
+                                        <input class="form-check-input bg-secondary border-dark" type="checkbox" role="switch" name="metodoC" id="email">
+                                        <label class="form-check-label label_contacto" for="email">Email</label>
+                                    </div>
+                                    
+                                    <br>
+                                    
+                                    <div class="form-check form-switch">
+                                        <input class="form-check-input bg-secondary border-dark" type="checkbox" role="switch" name="metodoC" id="telefono">
+                                        <label class="form-check-label label_contacto" for="telefono">Telefono</label>
+                                    </div>
+    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- fin de acordeon -->
+                    
+                    <div class="form-floating">
+                        <input class="form-control input_mail_telefono" type="email" name="mail" id="" placeholder="Introduce tu email">
+                        <label for="mail" class="label_contacto">Email: </label>
+                    </div>
+            
+                    <br> <br>
+                    
+                    <div class="form-floating">
+                        <input class="form-control input_mail_telefono" type="text" id="numero" placeholder="Introduce tu numero de telefono">
+                        <label for="numero" class="label_contacto">Telefono o Whatsapp: </label>
+                    </div>
+                    
+                    <br> <br>
+                    
+                    <label for="comentarios" class="label_contacto">Caja de comentarios:</label> <br>
+                    <textarea name="comentarios" class="comentarios" id="" cols="35" rows="10"></textarea>
+            
+                    <br>
+            
+                    <button type="button" class="btn btn-dark btn-outline-light float-center">Enviar</button>
+                </form>
+            </section>
+        </div>
+
+
+    </main>
+        
+
+
+
+
+
+    <footer>
+
+        <p>Seguinos en nuestras redes sociales</p>
+
+        <div class="redes">
+            <a href="https://www.instagram.com/trabajos_en_pino/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=100063762870269"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://ar.pinterest.com"><i class="fa-brands fa-pinterest"></i></a>
+        </div>
+
+    </footer>
+
+    <!-- script de aos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <!-- script de bootstrap  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    
+</body>
+</html>

@@ -1,0 +1,626 @@
+@import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+$sombraT: 0px 0px 12px rgb(255, 255, 255);
+
+// mapa de bg-colors y colores de texto
+$colores:(
+    colorform: rgb(206, 194, 194),
+    tfooter: rgb(119, 148, 156),
+    tlogo: #fff
+);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* -css- nav y footer todas las paginas */
+header{
+    display: flex;
+    width: 100%;
+    background-color: rgb(14 70 70);
+    max-height: 59px;
+    
+    .logo{
+
+        .jyr{
+            color: map-get($colores, tlogo);
+            align-content: center;
+            text-shadow: $sombraT;
+            padding-left: 5px;
+        }
+    }
+    
+    nav{
+        width: 70%;
+        padding-top: 12px;
+        font-size: 20px;
+    }
+    
+    .nav{
+        justify-content: flex-end;
+    }
+    
+    .nav-link{
+        color: #fff;
+        
+        &:hover{
+            color: #fff;
+        }
+    }
+}
+
+footer{
+    text-align: center;
+    background-color: rgb(11, 13, 49);
+    padding: 10px;
+
+    p{
+        margin: 5px;
+        font-size: 30px;
+        color: map-get($colores, tfooter);
+        bottom: 0;
+    
+    }
+    
+    .redes{
+        margin: 5px;
+        padding: 5px;
+        padding-top: 20px;
+        font-size: 35px;
+        list-style: none;
+        
+        a{
+            color: map-get($colores, tfooter);
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+    }
+}
+
+/* inicio -css- index */
+
+h1{
+    height: 90px;
+    width: 100%;
+    background-image: url(../img/imagen_fondo.jpeg);
+    font-size: 50px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 4px dotted ;
+}
+
+.seccion-carrusel{
+    margin-top: 10px;
+}
+
+.titulo_body{
+    font-size: 40px;
+    letter-spacing: 5px;
+    padding-bottom: 10px;
+    text-shadow: $sombraT, $sombraT;
+}
+.parrafos_body{
+    font-size: 25px;
+    color: #00023c;
+    font-family: 'Titan One', 'cursive';
+    text-shadow: $sombraT, $sombraT;
+}
+
+.bg-secondary {
+    --bs-bg-opacity: 50%;
+    background-color: rgba(var(--bs-secondary-rgb),var(--bs-bg-opacity))!important;
+}
+
+/* inicio -css- servicios */
+
+.sec_cartas{
+    display: flex;
+    justify-content: space-around;
+}
+
+.card{
+    margin-top: 10px;
+    background-color: rgb(153, 168, 173);
+    
+    img{
+        padding-top: 5px;
+        border-radius: 10px;
+    }
+}
+
+
+/* inicio -css- galeria */
+
+.main_galeria{
+    background-image: url(../img/imagen_fondo_galeria.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    
+    .t_galeria{
+        text-align: center;
+        margin-bottom: 20px;
+        padding: 0;
+        padding-top: 20px;
+        text-shadow: $sombraT, $sombraT, $sombraT;
+    }
+    
+    .galeria{
+        width: 97%;
+        margin-left: 1.5%;
+        padding-bottom: 20px;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 500px);
+        grid-gap: 15px;
+        
+        .img{
+            border: 2px solid black;
+            border-radius: 20px;
+            transition: 1s;
+            background-position: center;
+        
+            &:hover{
+                transform: scale(1.02);
+                transition: 1s;
+            }
+        }
+        
+        
+        .img1{
+            grid-column: 1/2;
+            grid-row: 1/3;
+            background-image: url(../img/proceso1.jpg);
+        }
+        
+        .img2{
+            grid-column: 2/4;
+            grid-row: 1/2;
+            background-image: url(../img/mueble-cajon.jpg);
+            background-size: cover;
+        }
+        
+        .img3{
+            grid-column: 2/3;
+            grid-row: 2/3;
+            background-image: url(../img/mueble1.jpeg);
+            background-size: cover;
+        }
+        
+        .img4{
+            grid-column: 3/4;
+            grid-row: 2/4;
+            background-image: url(../img/porta_joystick.jpeg);
+            background-position: center;
+            
+            &:hover{
+                background-image: url(../img/porta_joystick-1.jpeg);
+                background-size: cover;
+                transition: 1s;
+            }
+        }
+        
+        
+        .img5{
+            grid-column: 1/2;
+            grid-row: 3/4;
+            background-image: url(../img/banco.jpeg);
+            background-size: cover;
+        }
+        
+        .img6{
+            grid-column: 2/3;
+            grid-row: 3/4;
+            background-image: url(../img/lapicero.jpeg);
+            background-size: cover;
+            background-position: center;
+            
+            &:hover{
+                background-image: url(../img/lapicero-2.jpeg);
+                background-size: cover;
+                transition: 1s;
+            }
+        }
+    }
+}
+
+.subida{
+    bottom: 20px;
+    right: 20px;
+    height: 50px;
+    width: 50px;
+    border-radius: 5px;
+    border-radius: 60px;
+    color: white;
+    background-color: #01057e;
+    text-align: center;
+    line-height: 50px;
+    border: 2px solid white;
+    position: fixed;
+}
+/* fin -css- galeria*/
+
+/* inicio -css- ubicacion */
+
+.main_ubicacion h2{
+    h2{
+        padding: 0;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    
+    .mapa{
+        border: 2px solid black;
+    }
+    
+    .direccion{
+        margin: 10px 0 10px 5px;
+        font-size: 25px;
+    }
+}
+
+/* fin -css- ubicacion */
+
+/* inicio -css- contacto */
+
+.main_contacto{
+    background-image: url(../img/imagen_fondo_galeria.jpg);
+    background-size: cover;
+    background-position: center;
+    
+    .titulo_body{
+        padding: 15px 0 10px 10px;
+        text-shadow: $sombraT, $sombraT, $sombraT;
+    }
+    
+    .parrafos_body{
+        text-shadow: $sombraT, $sombraT;
+        padding-bottom: 20px;
+        padding-left: 10px;
+    }
+}
+
+/* --css del formulario de contacto */
+
+.contenedor_form{
+    padding-bottom: 20px;
+    
+    
+    .formulario{
+        display: flex;
+        justify-content: flex-start;
+        border: 5px solid white;
+        padding: 20px 0 15px 10px;
+        margin-left: 15px;
+        width: 50%;
+        
+        
+        
+        .formulario input{
+            background-color: map-get($colores, colorform);
+            
+            &::placeholder{
+                color: rgb(83, 81, 81);
+                text-align: center;
+            }
+        }
+        
+        .formulario textarea{
+            background-color: map-get($colores, colorform);
+            border-radius: 15px;
+        }
+        
+        .input_mail_telefono{
+            width: 300px;
+            border-radius: 20px;
+        }
+        
+        .boton{
+            position: 50%;
+        }
+    }
+}
+
+.accordion{
+    padding: 15px 0 10px px;
+    padding-bottom: 15px;
+    --bs-accordion-btn-padding-y: 0px !important;
+    /* color del acordeon desplegado */
+    --bs-accordion-active-bg: map-get($colores, colorform);
+    --bs-accordion-active-color: black;
+    
+    
+    h2{
+        padding: 15px 0 15px 0px;
+    }
+}
+
+
+/* fin -css- contacto */
+.label_contacto, .acordeon_titulo{
+    font-family: 'Bangers','cursive';
+    font-size: 22px;
+    padding-left: 15px;
+    text-shadow: $sombraT, $sombraT;
+}
+
+/* inicio de media queries */
+
+@media screen and (max-width: 1590px) {
+    
+    .main_galeria{
+        .galeria{
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(4, 600px);
+            
+            .img1{
+                grid-column: 1/3;
+                grid-row: 1/2;
+                background-image: url(../img/mueble-cajon.jpg);
+                background-size: cover;
+            }
+        
+            .img2{
+                grid-column: 1/2;
+                grid-row: 2/3;
+                background-image: url(../img/mueble1-2.jpg);
+                background-size: cover;
+                background-position: -300px;
+            }
+        
+            .img3{
+                grid-column: 2/3;
+                grid-row: 2/4;
+                background-image: url(../img/proceso1.jpg);
+            }
+        
+            .img4{
+                grid-column: 1/2;
+                grid-row: 3/4;
+                background-image: url(../img/banco.jpeg);
+                
+                &:hover{
+                    background-image: url(../img/banco.jpeg) !important;
+                    background-size: none;
+                }
+            }
+        
+            .img5{
+                grid-column: 2/3;
+                grid-row: 4/5;
+                background-image: url(../img/porta_celular.jpeg);
+                background-position: center;
+            }
+        
+            .img6{
+                grid-column: 1/2;
+                grid-row: 4/5;
+                background-image: url(../img/lapicero.jpeg);
+                background-size: cover;
+                background-position: center;
+            }
+        }
+    }
+
+
+}
+
+@media screen and (max-width: 1280px) {
+    .main_galeria{
+        .galeria{
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(7, 900px);
+    
+            .img1{
+                grid-column: 1/2;
+                grid-row: 1/3;
+                background-image: url(../img/porta_joystick.jpeg);
+                
+                &:hover{
+                    background-image: url(../img/porta_joystick-1.jpeg);
+            
+                }
+            }
+        
+            .img2{
+                grid-column: 1/2;
+                grid-row: 3/4;
+                background-position: center;
+            }
+        
+            .img3{
+                grid-column: 1/2;
+                grid-row: 4/5;
+                background-image: url(../img/porta_auriculares.jpg);
+            }
+        
+            .img4{
+                grid-column: 1/2;
+                grid-row: 5/6;
+                background-size: cover;
+            }
+        
+            .img5{
+                grid-column: 1/2;
+                grid-row: 6/7;
+            }
+            
+            .img6{
+                grid-column: 1/2;
+                grid-row: 7/8;
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 1177px) {
+    header{
+        nav{
+            width: 65%;
+        }
+    }
+}
+
+@media screen and (max-width: 1020px) {
+    .main_galeria{
+        .galeria{
+            .img2{
+                background-image: url(../img/reparacion.jpg);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 950px) {
+    header{
+        nav{
+            width: 62%;
+        }
+    }
+}
+
+@media screen and (max-width: 850px) {
+    header{
+        display: inline-block;
+        nav{
+            width: 100%;
+            background-color: rgb(14 70 70);
+        }
+    
+        .nav{
+            justify-content: space-around;
+        }
+    }
+
+    header#servicios{
+        margin-bottom: 50px;
+    }
+
+    .main_ubicacion{
+        .titulo_body{
+            padding-top: 10px;
+        }
+    }
+}
+
+@media screen and (max-width: 840px) {
+    .main_galeria{
+        .galeria{
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(7, 400px);
+    
+            .img2{
+                    background-size: contain;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .titulo_body{
+        font-size: 30px;
+    }
+    .parrafos_body{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .contenedor_form{
+        display: flex;
+        justify-content: center;
+
+        .formulario{
+            margin: 0px;
+            width: 350px;
+        }
+    }
+
+}
+
+@media screen and (max-width: 560px) {
+    .titulo_body{
+        font-size: 25px;
+        letter-spacing: 1px;
+    }
+    .parrafos_body{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 530px) {
+
+    header#servicios{
+        margin-bottom: 30px;
+    }
+
+    header{
+        nav{
+            font-size: 15px;
+        }
+    }
+}
+
+@media screen and (max-width: 482px) {
+    h1{
+        font-size: 35px;
+        padding-top: 20px;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    header{
+        nav{
+            font-size: 13px;
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    header{
+        nav{
+            font-size: 10px;
+        }
+    }
+}
+
+@media screen and (max-width: 360px) {
+    h1{
+        font-size: 25px;
+        padding-top: 25px;
+    }
+
+    .main_ubicacion{
+        .titulo_body{
+            font-size: 15px;
+        }
+    }
+}
+
+@media screen and (max-width: 347px) {
+    header{
+        nav{
+            font-size: 9px;
+        }
+    }
+}
+
+@media screen and (max-width: 330px) {
+    header{
+        nav{
+            font-size: 8px;
+        }
+    }
+}

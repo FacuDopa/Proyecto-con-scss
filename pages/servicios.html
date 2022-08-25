@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- cdnjs -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="../css/estilos.css">
+    <title>servicios</title>
+</head>
+<body id="servicios">
+
+    <header>
+        <logo class="logo">
+            <h2 class="jyr">Carpinteria J&R Desings</h2>
+        </logo>
+
+        <nav>
+            <ul class="nav nav-tabs col-12">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Inicio</a>
+                </li>
+                <li>
+                    <a class="nav-link active" aria-current="page" href="#">Servicios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="galeria.html">Galeria</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="ubicacion.html">Ubicacion</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">Contacto</a>
+                </li>
+    
+            </ul>
+        </nav>
+
+    </header>
+
+    <main class="container-fluid main_servicios">
+        <div class="row">
+            <div class="col-12 mt-2" data-aos="fade-down-right">
+                <h2 class="titulo_body"><i class="fa-solid fa-hammer"> Tipos de Servicios</i></h2>
+                <p class="parrafos_body">Ofrecemos dos tipos de servicios: <br> Muebles a medida o productos que tengamos en stock, ya tienen un diseño, medidas y en algunos casos colores ya definidos</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <section class="col-12">
+                <h2 class="titulo_body" data-aos="fade-down-right"><i class="fa-solid fa-hammer"> Productos que ofrecemos</i></h2>
+            </section>
+        </div>
+        <!-- inicio de las cards -->
+        <section class="container-fluid row sec_cartas">
+            <!-- primera card -->
+            <div class="card border-dark" style="width:400px">
+                <img class="card-img-top" src="../img/collage.jpg" alt="rack para tv en madera">
+                <div class="card-body">
+                    <h4 class="card-title border-top border-dark">Rack para Tv</h4>
+                    <p class="card-text">Rack para Tv con dos cajones superiores y dos puertas con amplio espacio debajo, es a medida</p>
+                </div>
+            </div>
+            <!-- segunda card -->
+            <div class="card border-dark" style="width:400px">
+                <!-- inicio de carrusel -->
+                <div id="demo" class="carousel slide" data-bs-ride="carousel">
+                    <!-- indicador de img -->
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                        <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                    </div>
+    
+                    <!-- imagenes del carrusel -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="../img/avion.jpg" alt="cajon-repisa" class="img-fluid d-block">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../img/avion2.jpg" alt="macetero" class="img-fluid d-block">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../img/avion3.jpg" alt="bajomesada" class="img-fluid d-block">
+                        </div>
+                    </div>
+    
+                    <!-- flechas de izquierda y derecha -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
+                <!-- fin del carusel -->
+                <div class="card-body">
+                    <h4 class="card-title border-top border-dark">Avion de madera para chicos</h4>
+                    <p class="card-text">Resistente, no tiene piezas movibles</p>
+                </div>
+            </div>
+            <!-- tercer card -->
+            <div class="card border-dark" style="width:400px">
+                <img class="card-img-top" height="374" src="../img/banco.jpeg" alt="banco bajo">
+                <div class="card-body">
+                    <h4 class="card-title border-top border-dark">Banco</h4>
+                    <p class="card-text">Banco de 4 patas, con base redonda, es bajo, disponible en varios colores</p>
+                </div>
+            </div>
+            <!-- cuarta card -->
+            <div class="card border-dark" style="width:400px">
+                <img class="card-img-top" height="374" src="../img/Cajon.jpg" alt="mesita de luz con cajon">
+                <div class="card-body">
+                    <h4 class="card-title border-top border-dark">Mesita de luz</h4>
+                    <p class="card-text">Mesita de luz con un cajon con manija</p>
+                </div>
+            </div>
+        </section>
+        <!-- fin de las cards -->
+        <div class="row">
+            <div class="col-12 mt-5" data-aos="fade-down-right">
+                <h2 class="titulo_body"><i class="fa-solid fa-hammer"> Calidad de nuestros Productos</i></h2>
+                <p class="parrafos_body">Ofrecemos una muy buena calidad tanto en nuestros productos como en la atencion a los clientes para que tengan la mejor experiencia trabajando con nosotros</p>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+
+        <p>Seguinos en nuestras redes sociales</p>
+
+        <div class="redes">
+            <a href="https://www.instagram.com/trabajos_en_pino/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=100063762870269"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://ar.pinterest.com"><i class="fa-brands fa-pinterest"></i></a>
+        </div>
+
+    </footer>
+
+    <!-- script de aos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <!-- script de bootstrap  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    
+</body>
+</html>
